@@ -1,7 +1,7 @@
 #gyan alandia period 7 9/7/2
 # Personal Finance Calculator
-income = float(input("What is your monthly income: "))
 
+income = float(input("What is your monthly income: "))
 rent = float(input("What is your monthly rent/mortgage: "))
 utilities = float(input("What is your monthly utilities: "))
 groceries = float(input("What is your monthly groceries: "))

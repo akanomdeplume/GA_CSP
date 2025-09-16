@@ -1,0 +1,32 @@
+def monthly_budget_summary():
+    income = float(input("What is your monthly income: "))
+    
+    rent = float(input("What is your monthly rent/mortgage: "))
+    utilities = float(input("What is your monthly utilities: "))
+    groceries = float(input("What is your monthly groceries: "))
+    transportation = float(input("What is your monthly transportation: "))
+    
+    # Calculate percentages
+    rent_pct = (rent / income) * 100
+    utilities_pct = (utilities / income) * 100
+    groceries_pct = (groceries / income) * 100
+    transport_pct = (transportation / income) * 100
+    
+    # Savings
+    savings_pct = 10
+    savings = (savings_pct / 100) * income
+    
+    # Total and leftover
+    total_expenses = rent + utilities + groceries + transportation + savings
+    leftover = income - total_expenses
+    
+    # Output
+    print("\n--- Monthly Budget Summary ---")
+    print("Your rent is $", rent, "and that is", round(rent_pct), "% of your income.")
+    print("Your utilities are $", utilities, "and that is", round(utilities_pct), "% of your income.")
+    print("Your groceries are $", groceries, "and that is", round(groceries_pct), "% of your income.")
+    print("Your transportation is $", transportation, "and that is", round(transport_pct), "% of your income.")
+    
+    print("\nYou should save $", round(savings, 2), "a month, that is", savings_pct, "% of your income.")
+    print("You have $", round(leftover, 2), "of spending money each month!")
+    
