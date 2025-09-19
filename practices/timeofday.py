@@ -1,10 +1,18 @@
+#GA 7th Getting time ntoes
+
 import time
+import datetime
 
-current_hour = time.localtime().tm_hour
+epoch = time.time()
+readable_time =time.ctime(epoch)
 
-if current_hour >= 20 or current_hour < 5:
-    print("good evening!")
-elif current_hour >= 12:
-    print("good afternoon!!!")
-else:
-    print("good morning!!!")
+print(f"the time in seconds since jan 1st 1970: {epoch}")
+print(f"the time is :{readable_time}")
+
+now = datetime.datetime.now()
+hour = now.hour
+
+print(f"the time is {now}")
+print(f"The time is {hour}")
+
+print(f"The time is: {now}")
