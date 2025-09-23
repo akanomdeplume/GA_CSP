@@ -1,3 +1,4 @@
+#GA 7th Fizzbuzz
 x = 1
 while x <= 50:
         if x % 3 ==0 and x % 5 ==0:
