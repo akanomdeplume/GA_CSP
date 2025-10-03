@@ -4,7 +4,7 @@
 int main(void){
     int grade = 95; //4 bytes
     float pi = 3.14; //4 bytes
-    double long_pi;  3.1415926358; // 8 Bytes
+    double long_pi = 3.1415926358; // 8 Bytes
     char letter_grade = 'A';
     char name[] = "Gyan";
         printf("%s you did it!", name);
