@@ -4,5 +4,5 @@ int main(void){
     char name[15];
     printf("what is your name:\n");
     scanf("%d", &name);
-    printf("Hello", name);
+    printf("Hello", %c, name);
 }
