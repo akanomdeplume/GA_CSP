@@ -1,0 +1,21 @@
+//GA 7th hello world update
+
+#include <stdio.h>
+
+void add(char name[]){
+      printf("hello %s!\n",name);
+}
+
+int main(void){
+    char name[50];
+
+    printf("what is your name?\n");
+    scanf("%s", name);
+    add(name);
+
+    add("Beckham");
+    add("Nico");
+    add("Gage");
+    add("Isahiaha");
+    return 0;
+}
